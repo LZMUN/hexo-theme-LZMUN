@@ -1,0 +1,17 @@
+
+<div class="mdui-drawer mdui-drawer-close mdui-drawer-scrollbar" id="left-drawer" style="overflow-y: hidden;">
+    <div class="mdui-hidden-md-up">
+    </div>
+    <ul class="mdui-list">
+        <% for (var i in theme.sidebar.pages){ %>
+        <a class="mdui-list-item mdui-ripple" href="<%= theme.sidebar.pages[i].link %>">
+            <% if(theme.sidebar.pages[i].icon){ %>
+            <i class="mdui-list-item-icon mdui-icon material-icons"><%= theme.sidebar.pages[i].icon %></i>
+            <% } %>
+            <%= i %>
+            <div class="mdui-list-item-content"><%= i %></div>
+        </a>
+        <% } %>
+        <%= i %>
+    </ul>
+</div>

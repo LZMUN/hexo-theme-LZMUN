@@ -1,0 +1,5 @@
+sidebar:
+    pages:
+        About:
+            link: "/about"
+            icon: &#xe84d
